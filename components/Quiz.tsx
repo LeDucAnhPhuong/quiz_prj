@@ -105,10 +105,8 @@ export default function Quiz({ questions }: QuizProps) {
           <span className="text-sm text-muted-foreground">Score: {score}</span>
         </div>
         <CardTitle
-          // dangerouslySetInnerHTML={{ __html: currentQuestion.question }}
-        >
-          {currentQuestion.question}
-        </CardTitle>
+          dangerouslySetInnerHTML={{ __html: currentQuestion.question }}
+        />
       </CardHeader>
       <CardContent>
         <RadioGroup value={selectedAnswer || ""} className="space-y-3">
